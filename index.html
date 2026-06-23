@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placar de Sinuca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎱 Placar Contínuo de Sinuca</h1>
+
+        <div class="jogadores">
+            <div class="card" id="cardJogador1">
+                <input type="text" id="nomeJogador1" value="Jogador 1">
+
+                <h2 id="placar1">0</h2>
+
+                <p>Vitórias</p>
+
+                <button onclick="registrarVitoria(1)">
+                    Vitória Jogador 1
+                </button>
+            </div>
+
+            <div class="card" id="cardJogador2">
+                <input type="text" id="nomeJogador2" value="Jogador 2">
+
+                <h2 id="placar2">0</h2>
+
+                <p>Vitórias</p>
+
+                <button onclick="registrarVitoria(2)">
+                    Vitória Jogador 2
+                </button>
+            </div>
+        </div>
+
+        <div class="estatisticas">
+            <h2>📊 Estatísticas</h2>
+
+            <p id="estatisticasJogador1"></p>
+            <p id="estatisticasJogador2"></p>
+            <p id="totalPartidas"></p>
+        </div>
+
+        <div class="historico">
+            <h2>📜 Histórico das Partidas</h2>
+            <ul id="listaHistorico"></ul>
+        </div>
+
+        <button class="reset" onclick="resetarPlacar()">
+            Resetar Campeonato
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
