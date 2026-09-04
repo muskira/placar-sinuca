@@ -112,7 +112,33 @@ button:hover {
     border-radius: 10px;
 }
 
+.acoes {
+    display: flex;
+    gap: 15px;
+}
+
+.exportar {
+    flex: 1;
+    width: 100%;
+    background: #3b82f6;
+}
+
+.exportar:hover {
+    background: #2563eb;
+}
+
+.exportar-excel {
+    flex: 1;
+    width: 100%;
+    background: #16a34a;
+}
+
+.exportar-excel:hover {
+    background: #15803d;
+}
+
 .reset {
+    flex: 1;
     width: 100%;
     background: #ef4444;
 }
@@ -123,6 +149,10 @@ button:hover {
 
 @media (max-width: 700px) {
     .jogadores {
+        flex-direction: column;
+    }
+
+    .acoes {
         flex-direction: column;
     }
 }
