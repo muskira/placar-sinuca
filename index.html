@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Placar de Sinuca</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 </head>
 <body>
 
@@ -50,9 +51,19 @@
             <ul id="listaHistorico"></ul>
         </div>
 
-        <button class="reset" onclick="resetarPlacar()">
-            Resetar Campeonato
-        </button>
+        <div class="acoes">
+            <button class="exportar" onclick="exportarPlacar()">
+                💾 Exportar Placar (.txt)
+            </button>
+
+            <button class="exportar-excel" onclick="exportarPlacarExcel()">
+                📊 Exportar Placar (.xlsx)
+            </button>
+
+            <button class="reset" onclick="resetarPlacar()">
+                Resetar Campeonato
+            </button>
+        </div>
     </div>
 
     <script src="script.js"></script>
